@@ -1,6 +1,6 @@
 import pandas as pd
 
-df=pd.read_csv("C:\\Users\\HP\\OneDrive\\Desktop\\DAwithPython\\Project1_Weather_Dataset.csv")
+df=pd.read_csv("Your_Path")
 
 """              Q. DATA FRAMES              """
 #print(df.head()) 
@@ -97,5 +97,6 @@ dt=df.rename(columns={'Weather':'Weather Condition'})
 """ Q15. Find all instances when :
 A. 'Weather is Clear' and 'Relative Humidity is greater than 50 or
 B.'Visibility is above 40 """
+
 
 print(dt[(dt['Weather Condition']=='Clear') & (dt['Rel Hum_%']>50) | (dt['Visibility_km']>40)])
